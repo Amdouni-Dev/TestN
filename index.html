@@ -105,7 +105,85 @@
                 font-size: 14px; /* Ajustez la taille de police pour les écrans plus petits */
             }
         }
+        #ul1 {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: white;
+        }
 
+        #li1 {
+            position: relative;
+            padding-left: 30px;
+            height: 50px;
+            line-height: 50px;
+            margin: 5px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            width: 100%;
+            background: #cccccc; /* Old browsers */
+            background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 25%, #ffffff 75%, #cccccc 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(25%,#ffffff), color-stop(75%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #cccccc 0%,#ffffff 25%,#ffffff 75%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #cccccc 0%,#ffffff 25%,#ffffff 75%,#cccccc 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #cccccc 0%,#ffffff 25%,#ffffff 75%,#cccccc 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #cccccc 0%,#ffffff 25%,#ffffff 75%,#cccccc 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+            cursor: pointer;
+
+            box-shadow: 2px 2px 3px #666;
+            user-select: none;
+        }
+
+        #li1:before {
+            position: absolute;
+            content: "";
+            left: 4px;
+            top: 50%;
+            margin-top: -10px;
+            border-left: 20px solid #ccc;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        #li1:after {
+            position: absolute;
+            content: "";
+            left: 4px;
+            top: 50%;
+            margin-top: -10px;
+            border-left: 5px solid white;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        #li1:hover {
+
+            border-color: #777;
+            box-shadow: 3px 3px 5px #333;
+
+            background: #eeeeee; /* Old browsers */
+            background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 25%, #ffffff 75%, #dddddd 100%); /* FF3.6+ */
+
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(25%,#ffffff), color-stop(75%,#ffffff), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #dddddd 0%,#ffffff 25%,#ffffff 75%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+
+            background: -o-linear-gradient(top, #dddddd 0%,#ffffff 25%,#ffffff 75%,#dddddd 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #dddddd 0%,#ffffff 25%,#ffffff 75%,#dddddd 100%); /* IE10+ */
+
+            background: linear-gradient(to bottom, #dddddd 0%,#ffffff 25%,#ffffff 75%,#dddddd 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+        }
+
+        #li1:hover:before {
+            border-left-color: #777;
+
+        }
+
+        #li1:active {
+            background: #eee;
+            box-shadow: inset 0 1px 1px #666;
+        }
 
     </style>
 </head>
@@ -175,7 +253,7 @@
                 </div>
             </div>              
             <div class="img-holder">
-                <img src="assets/imgs/MounaLOGO.jpg" alt=""  >
+                <img src="assets/imgs/Logomouna.jpg" alt=""  >
             </div>      
         </div>  
 
@@ -196,13 +274,13 @@
 <!--        </div>-->
     </header>
     <!-- End of Page Header -->
-    
+
     <!-- About section -->
     <section id="about" class="section mt-3">
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3" style="margin-top:5rem">
-                    <img src="assets/imgs/MounaLOGO.jpg" alt="" class="img-thumbnail mb-4">
+                    <img src="assets/imgs/Logomouna.jpg"  alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
                     <h6 class="title"> Amdouni Mouna</h6>
@@ -501,6 +579,8 @@
                 <p class="list-title" style="font-size: 25px">
                     <b>NextJS | NodeJs/ExpressJS | Python </b>
                     <br/>
+                <p style="font-size:18px " >Github: <a href="https://github.com/CropTrek/CropTrek" >https://github.com/CropTrek/CropTrek</a> </p>
+
                 <p class="list-title" style="font-size: 15px">
                     Dans cette vidéo, je présente ma contribution à un projet collaboratif réalisé à l'ESPRIT. Notre équipe de quatre personnes a développé une plateforme innovante utilisant Next.js pour le Frontend, Express.js pour le Backend, et Python pour le système de recommandation, la cartographie des agriculteurs et le scraping.
 
@@ -521,6 +601,8 @@
                     <p class="list-title" style="font-size: 25px">
                         <b>AngularJS | SpringBoot  </b>
                         <br/>
+                    <p style="font-size:18px " >Github: <a href="https://github.com/Amdouni-Dev/Kaddem_TWIN6_2022-2023" >https://github.com/Amdouni-Dev/Kaddem_TWIN6_2022-2023</a> </p>
+
                     <p class="list-title" style="font-size: 15px">
                     Dans Cette Vidéo, Je Vais Présenter Ma Contribution Individuelle À Une Application Réalisée Au Sein De Notre École ESPRIT, En Collaboration Avec Quatre Autres Personnes. Cette Application A Pour Objectif De Résoudre Le Défi De Faciliter La Communication Entre Les Étudiants Et L'administration De Notre École. Découvrez Comment Notre Projet Vise À Améliorer L'expérience Des Étudiants En Simplifiant Les Échanges Et En Renforçant La Collaboration Entre Les Deux Parties.
                     </p>
@@ -536,6 +618,7 @@
                 <p class="list-title" style="font-size: 25px">
                     <b>React Js /Redux </b>
                     <br/>
+                <p style="font-size:18px " >Github: <a href="https://github.com/Amdouni-Dev/ReactApp.git" >                    https://github.com/Amdouni-Dev/ReactApp.git</a> </p>
                 <p class="list-title" style="font-size: 15px">
                 Dans Cette Vidéo, Je Présente Une Petite Application Que J'ai Réalisé Avec React.Js. Cette Application Permet D'effectuer Des Opérations Telles Que L'ajout, La Modification, La Suppression Et L'affichage Des Détails Des Produits. J'ai Utilisé Redux Pour Gérer L'état Des Produits Dans L'application, Ce Qui Permet D'afficher Des Alertes En Temps Réel Lors Des Interactions Avec La Carte. Découvrez Comment Cette Application Simplifie La Gestion Des Produits Et Améliore L'expérience Utilisateur Grâce À React.Js Et Redux.
 
@@ -552,6 +635,10 @@
                     <p class="list-title" style="font-size: 25px">
                         <b>Django </b>
                         <br/>
+                    <p style="font-size:18px " >Github: <a href="                        https://github.com/Amdouni-Dev/DjangoAPP
+" >                                           https://github.com/Amdouni-Dev/DjangoAPP
+                </a> </p>
+
                     <p class="list-title" style="font-size: 15px">
                     Dans Cette Vidéo, Je Présente Ma Petite Application Réalisé Avec Django. Cette Application Permet De Gérer Les Utilisateurs Ainsi Que Les Événements Créés Par Ces Derniers. Du Côté Administrateur, Vous Pouvez Effectuer Des Opérations Telles Que L'ajout, La Modification, La Suppression, La Consultation Détaillée, Le Tri Et La Recherche D'événements Ou D'utilisateurs. De Plus, Un Système D'authentification Sécurisé A Été Mis En Place, Permettant Aux Utilisateurs De S'inscrire À Des Événements Et De Gérer Les Événements Qu'ils Ont Créés. Découvrez Comment Cette Application Simplifie La Gestion Des Utilisateurs Et Des Événements Tout En Garantissant Une Expérience Sécurisée Grâce À Django.
 
@@ -564,8 +651,25 @@
 
 
         </div>
+        <br/>
+        <div class="container text-center">
+            <h6 class="subtitle">Autres Projets Sur Git</h6></div>
+        <ul id="ul1" >
+            <li id="li1" >
+                <p style="font-size:18px " > <a href="https://github.com/Amdouni-Dev/AirportManagement"  target="_blank">
+                    ASP .NET</a></p>
 
+            </li>
+            <li id="li1" >
+                <p style="font-size:18px " > <a href="https://github.com/Amdouni-Dev/Project-with-scrum-method-Symfony-V4-Java-DESKTOP-CodeNameOne-"  target="_blank">
+                    SymfonyV4 | JAVA-DESKTOP | CodeNameOne</a></p>
+
+            </li>
+<!--            <li id="li1" >List item 4</li>-->
+<!--            <li id="li1" >List item 5</li>-->
+        </ul>
     </div>
+
 
 
 <!--    <section class="section">-->
